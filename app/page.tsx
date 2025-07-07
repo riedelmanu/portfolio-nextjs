@@ -10,8 +10,8 @@ export default function Portfolio() {
     <div className="flex min-h-screen flex-col">
       {/* Header */}
       <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center justify-between">
-          <div className="flex items-center gap-2 font-bold">
+        <div className="w-full max-w-screen-xl mx-auto flex h-16 items-center justify-between">
+          <div className="flex items-center gap-2 font-bold ml-4">
             <span className="text-xl">DevPortfolio</span>
           </div>
 
@@ -46,46 +46,35 @@ export default function Portfolio() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section id="home" className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
-          <div className="container px-4 md:px-6">
-            <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_500px]">
-              <div className="flex flex-col justify-center space-y-4">
-                <div className="space-y-2">
-                  <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                    Desarrollador de Software
-                  </h1>
-                  <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                    Creando soluciones digitales innovadoras y funcionales para el mundo moderno.
-                  </p>
-                </div>
-                <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Link href="#projects">
-                    <Button>Ver proyectos</Button>
-                  </Link>
-                  <Link href="#contact">
-                    <Button variant="outline">Contacto</Button>
-                  </Link>
-                </div>
-              </div>
-              <div className="flex items-center justify-center">
-                <Image
-                  src="/placeholder.svg?height=400&width=400"
-                  alt="Imagen de perfil"
-                  width={400}
-                  height={400}
-                  className="rounded-full aspect-square object-cover border-4 border-border"
-                  priority
-                />
-              </div>
-            </div>
-          </div>
-        </section>
+<section id="home" className="w-full overflow-x-hidden py-12 md:py-24 lg:py-32 xl:py-48">
+  <div className="max-w-4xl mx-auto px-4 md:px-6">
+    <div className="flex flex-col items-center justify-center text-center space-y-6">
+      <div className="space-y-2">
+        <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+          Manuel Ángel Riedel
+        </h1>
+        <p className="max-w-[600px] text-muted-foreground md:text-xl mx-auto">
+          Estudiante de Ingeniería en Sistemas de Información con gran interés por el desarrollo de software.
+        </p>
+      </div>
+      <div className="flex flex-col gap-2 min-[400px]:flex-row justify-center">
+        <Link href="#projects">
+          <Button>Ver proyectos</Button>
+        </Link>
+        <Link href="#contact">
+          <Button variant="outline">Contacto</Button>
+        </Link>
+      </div>
+    </div>
+  </div>
+</section>
+
 
         {/* Projects Section */}
-        <section id="projects" className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
-          <div className="container px-4 md:px-6">
+        <section id="projects" className="w-full py-12 md:py-24 lg:py-32 bg-muted/50 overflow-x-hidden">
+          <div className="max-w-6xl mx-auto px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
+              <div className="space-y-2 max-w-[600px]">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Mis Proyectos</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Una selección de mis trabajos más recientes y destacados en desarrollo de software.
@@ -199,10 +188,10 @@ export default function Portfolio() {
         </section>
 
         {/* Skills Section */}
-        <section id="skills" className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
+        <section id="skills" className="w-full py-12 md:py-24 lg:py-32 overflow-x-hidden">
+          <div className="max-w-6xl mx-auto px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
+              <div className="space-y-2 max-w-[600px]">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Mis Habilidades</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Tecnologías y herramientas que domino para el desarrollo de software.
@@ -375,12 +364,12 @@ export default function Portfolio() {
         </section>
 
         {/* About Section */}
-        <section id="about" className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
-          <div className="container px-4 md:px-6">
+        <section id="about" className="w-full py-12 md:py-24 lg:py-32 bg-muted/50 overflow-x-hidden">
+          <div className="max-w-6xl mx-auto px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_500px]">
               <div className="flex items-center justify-center">
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
+                  src="/images/perfil.jpg"
                   alt="Sobre mí"
                   width={400}
                   height={400}
@@ -388,21 +377,16 @@ export default function Portfolio() {
                 />
               </div>
               <div className="flex flex-col justify-center space-y-4">
-                <div className="space-y-2">
+                <div className="space-y-2 max-w-[600px]">
                   <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Sobre Mí</h2>
                   <p className="text-muted-foreground">
-                    Soy un desarrollador de software apasionado por crear soluciones digitales que resuelvan problemas
-                    reales. Con más de 5 años de experiencia en el desarrollo web, me especializo en crear aplicaciones
-                    modernas, eficientes y escalables.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ut debitis magnam nostrum sapiente delectus. Dignissimos inventore nostrum tempora consequatur? Quis expedita, illo eligendi necessitatibus quam quos aliquid officia perspiciatis.
                   </p>
                   <p className="text-muted-foreground mt-4">
-                    Mi enfoque se centra en la calidad del código, la experiencia del usuario y la implementación de las
-                    mejores prácticas de la industria. Siempre estoy aprendiendo nuevas tecnologías y metodologías para
-                    mejorar mis habilidades.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est et quae deserunt aspernatur itaque reprehenderit voluptate suscipit eveniet, iusto qui odit dicta id architecto quos. Unde veniam earum itaque autem!
                   </p>
                   <p className="text-muted-foreground mt-4">
-                    Cuando no estoy programando, disfruto de la fotografía, el senderismo y la lectura de libros sobre
-                    tecnología y ciencia ficción.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est maiores inventore earum amet aut eius voluptatibus totam repudiandae culpa, veniam similique consequatur delectus consectetur aliquam nam ipsam aperiam sequi dignissimos.
                   </p>
                 </div>
               </div>

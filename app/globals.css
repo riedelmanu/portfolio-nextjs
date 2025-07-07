@@ -92,3 +92,29 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+/* Ocultar botón flotante de Next.js */
+[data-nextjs-data-router-tree-view] {
+  display: none !important;
+}
+
+/* Ocultar otros posibles botones flotantes de Next.js/Vercel */
+[data-vercel-badge] {
+  display: none !important;
+}
+
+/* Ocultar elementos con clases específicas de Next.js */
+.nextjs-toast-errors-parent {
+  display: none !important;
+}
+
+/* Ocultar botones flotantes en la esquina inferior derecha */
+.fixed.bottom-4.right-4 {
+  display: none !important;
+}
+
+/* Ocultar elementos con z-index alto que puedan ser botones flotantes */
+[style*="z-index: 9999"],
+[style*="z-index: 99999"] {
+  display: none !important;
+}
