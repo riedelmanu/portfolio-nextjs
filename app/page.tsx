@@ -396,13 +396,10 @@ export default function Portfolio() {
 
         {/* Contact Section */}
         <section id="contact" className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
+          <div className="max-w-6xl mx-auto px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Contacto</h2>
-                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  ¿Interesado en trabajar juntos? Ponte en contacto conmigo.
-                </p>
               </div>
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2">
@@ -464,35 +461,31 @@ export default function Portfolio() {
               <div className="space-y-4">
                 <div className="grid gap-1">
                   <h3 className="text-xl font-bold">Email</h3>
-                  <p className="text-muted-foreground">contacto@tudominio.com</p>
+                  <p className="text-muted-foreground">manuelriedel002@gmail.com</p>
                 </div>
                 <div className="grid gap-1">
                   <h3 className="text-xl font-bold">Ubicación</h3>
-                  <p className="text-muted-foreground">Ciudad, País</p>
+                  <p className="text-muted-foreground">Concepción del Uruguay, Argentina</p>
                 </div>
                 <div className="grid gap-1">
                   <h3 className="text-xl font-bold">Horario de trabajo</h3>
-                  <p className="text-muted-foreground">Lunes a Viernes, 9:00 AM - 6:00 PM</p>
+                  <p className="text-muted-foreground">Disponibilidad horaria flexible según requerimientos del proyecto</p>
                 </div>
                 <div className="grid gap-1">
-                  <h3 className="text-xl font-bold">Redes sociales</h3>
+                  <h3 className="text-xl font-bold">Otras formas de contacto</h3>
                   <div className="flex space-x-4">
-                    <Link href="#" className="text-muted-foreground hover:text-primary">
+                    <a  href="https://github.com/riedelmanu" className="text-muted-foreground hover:text-primary" target="_blank" rel="noopener noreferrer">
                       <Github className="h-6 w-6" />
                       <span className="sr-only">GitHub</span>
-                    </Link>
-                    <Link href="#" className="text-muted-foreground hover:text-primary">
+                    </a>    
+                    <a href="https://www.linkedin.com/in/manuel-riedel-997383255/" className="text-muted-foreground hover:text-primary" target="_blank" rel="noopener noreferrer">
                       <Linkedin className="h-6 w-6" />
                       <span className="sr-only">LinkedIn</span>
-                    </Link>
-                    <Link href="#" className="text-muted-foreground hover:text-primary">
-                      <Twitter className="h-6 w-6" />
-                      <span className="sr-only">Twitter</span>
-                    </Link>
-                    <Link href="#" className="text-muted-foreground hover:text-primary">
+                    </a>
+                    <a href="mailto:manuelriedel002@gmail.com" className="text-muted-foreground hover:text-primary" target="_blank" rel="noopener noreferrer">
                       <Mail className="h-6 w-6" />
                       <span className="sr-only">Email</span>
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -503,7 +496,7 @@ export default function Portfolio() {
 
       {/* Footer */}
       <footer className="w-full border-t py-6 md:py-0">
-        <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
+        <div className="max-w-6xl mx-auto flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
             &copy; {new Date().getFullYear()} DevPortfolio. Todos los derechos reservados.
           </p>
@@ -515,10 +508,6 @@ export default function Portfolio() {
             <Link href="#" className="text-muted-foreground hover:text-primary">
               <Linkedin className="h-5 w-5" />
               <span className="sr-only">LinkedIn</span>
-            </Link>
-            <Link href="#" className="text-muted-foreground hover:text-primary">
-              <Twitter className="h-5 w-5" />
-              <span className="sr-only">Twitter</span>
             </Link>
             <Link href="#" className="text-muted-foreground hover:text-primary">
               <Mail className="h-5 w-5" />
