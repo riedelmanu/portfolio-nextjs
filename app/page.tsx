@@ -4,6 +4,18 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Github, Linkedin, Twitter, Mail, ExternalLink, Menu } from "lucide-react"
+import {Code2, Braces, Database, TerminalSquare, Atom, FileCode, Server, LayoutPanelLeft} from "lucide-react";
+
+const skills = [
+  { name: "JavaScript", icon: <FileCode className="h-6 w-6" /> },
+  { name: "React", icon: <Atom className="h-6 w-6" /> },
+  { name: "Node.js", icon: <Server className="h-6 w-6" /> },
+  { name: "TypeScript", icon: <Code2 className="h-6 w-6" /> },
+  { name: "Next.js", icon: <LayoutPanelLeft className="h-6 w-6" /> },
+  { name: "C#", icon: <Braces className="h-6 w-6" /> },
+  { name: "MySQL", icon: <Database className="h-6 w-6" /> },
+  { name: "Tailwind CSS", icon: <TerminalSquare className="h-6 w-6" /> },
+];
 
 export default function Portfolio() {
   return (
@@ -188,180 +200,29 @@ export default function Portfolio() {
         </section>
 
         {/* Skills Section */}
-        <section id="skills" className="w-full py-12 md:py-24 lg:py-32 overflow-x-hidden">
-          <div className="max-w-6xl mx-auto px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2 max-w-[600px]">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Mis Habilidades</h2>
-                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Tecnologías y herramientas que domino para el desarrollo de software.
-                </p>
-              </div>
-            </div>
-            <div className="mx-auto grid max-w-5xl grid-cols-2 gap-6 py-12 md:grid-cols-3 lg:grid-cols-4">
-              <div className="flex flex-col items-center space-y-2 rounded-lg border p-4">
-                <div className="rounded-full bg-muted p-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="h-6 w-6"
-                  >
-                    <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" />
-                    <path d="M13 2v7h7" />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-bold">JavaScript</h3>
-              </div>
-              <div className="flex flex-col items-center space-y-2 rounded-lg border p-4">
-                <div className="rounded-full bg-muted p-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="h-6 w-6"
-                  >
-                    <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" />
-                    <path d="M13 2v7h7" />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-bold">React</h3>
-              </div>
-              <div className="flex flex-col items-center space-y-2 rounded-lg border p-4">
-                <div className="rounded-full bg-muted p-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="h-6 w-6"
-                  >
-                    <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" />
-                    <path d="M13 2v7h7" />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-bold">Node.js</h3>
-              </div>
-              <div className="flex flex-col items-center space-y-2 rounded-lg border p-4">
-                <div className="rounded-full bg-muted p-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="h-6 w-6"
-                  >
-                    <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" />
-                    <path d="M13 2v7h7" />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-bold">TypeScript</h3>
-              </div>
-              <div className="flex flex-col items-center space-y-2 rounded-lg border p-4">
-                <div className="rounded-full bg-muted p-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="h-6 w-6"
-                  >
-                    <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" />
-                    <path d="M13 2v7h7" />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-bold">Next.js</h3>
-              </div>
-              <div className="flex flex-col items-center space-y-2 rounded-lg border p-4">
-                <div className="rounded-full bg-muted p-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="h-6 w-6"
-                  >
-                    <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" />
-                    <path d="M13 2v7h7" />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-bold">MongoDB</h3>
-              </div>
-              <div className="flex flex-col items-center space-y-2 rounded-lg border p-4">
-                <div className="rounded-full bg-muted p-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="h-6 w-6"
-                  >
-                    <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" />
-                    <path d="M13 2v7h7" />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-bold">PostgreSQL</h3>
-              </div>
-              <div className="flex flex-col items-center space-y-2 rounded-lg border p-4">
-                <div className="rounded-full bg-muted p-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="h-6 w-6"
-                  >
-                    <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" />
-                    <path d="M13 2v7h7" />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-bold">Tailwind CSS</h3>
-              </div>
-            </div>
-          </div>
-        </section>
+       <section id="skills" className="w-full py-12 md:py-24 lg:py-32 overflow-x-hidden">
+         <div className="max-w-6xl mx-auto px-4 md:px-6">
+           <div className="flex flex-col items-center justify-center space-y-4 text-center">
+             <div className="space-y-2 max-w-[600px]">
+               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Mis Habilidades</h2>
+               <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                 Tecnologías y herramientas que domino para el desarrollo de software.
+               </p>
+             </div>
+           </div> 
+           <div className="mx-auto grid max-w-5xl grid-cols-2 gap-6 py-12 md:grid-cols-3 lg:grid-cols-4">
+             {skills.map((skill) => (
+               <div key={skill.name} className="flex flex-col items-center space-y-2 rounded-lg border p-4">
+                 <div className="rounded-full bg-muted p-2 text-muted-foreground">
+                   {skill.icon}
+                 </div>
+                 <h3 className="text-lg font-bold">{skill.name}</h3>
+               </div>
+             ))}
+           </div>
+         </div>
+       </section>
+
 
         {/* About Section */}
         <section id="about" className="w-full py-12 md:py-24 lg:py-32 bg-muted/50 overflow-x-hidden">
@@ -380,13 +241,13 @@ export default function Portfolio() {
                 <div className="space-y-2 max-w-[600px]">
                   <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Sobre Mí</h2>
                   <p className="text-muted-foreground">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ut debitis magnam nostrum sapiente delectus. Dignissimos inventore nostrum tempora consequatur? Quis expedita, illo eligendi necessitatibus quam quos aliquid officia perspiciatis.
+                    Tengo 22 años y actualmente estoy en el último tramo de la carrera de Ingeniería en Sistemas de Información. A lo largo de mi formación, descubrí una fuerte vocación por el desarrollo de software, especialmente en el área backend. También realicé un curso de desarrollo full stack que me permitió ampliar mi visión técnica y reforzar conocimientos prácticos en distintas capas de una aplicación.
                   </p>
                   <p className="text-muted-foreground mt-4">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est et quae deserunt aspernatur itaque reprehenderit voluptate suscipit eveniet, iusto qui odit dicta id architecto quos. Unde veniam earum itaque autem!
+                    Me considero una persona proactiva, con gran interés por seguir aprendiendo e investigando nuevas tecnologías. Disfruto enfrentar desafíos técnicos y participar activamente en proyectos donde pueda contribuir con soluciones funcionales. Si bien mi enfoque principal es el desarrollo, estoy abierto a asumir otros roles del ámbito IT como análisis de datos, QA o soporte técnico, donde pueda seguir aprendiendo y aportando.
                   </p>
                   <p className="text-muted-foreground mt-4">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est maiores inventore earum amet aut eius voluptatibus totam repudiandae culpa, veniam similique consequatur delectus consectetur aliquam nam ipsam aperiam sequi dignissimos.
+                    He formado parte de varios proyectos en equipo, donde no solo consolidé mis habilidades técnicas, sino también mi capacidad de comunicación y colaboración. Me adapto bien a entornos dinámicos y disfruto trabajar en conjunto para alcanzar objetivos comunes, colaborando desde el compromiso y la responsabilidad profesional.
                   </p>
                 </div>
               </div>
@@ -448,7 +309,7 @@ export default function Portfolio() {
                   <p className="text-muted-foreground">Disponibilidad horaria flexible según requerimientos del proyecto</p>
                 </div>
                 <div className="grid gap-1">
-                  <h3 className="text-xl font-bold">Otras formas de contacto</h3>
+                  <h3 className="text-xl font-bold">Más sobre mí</h3>
                   <div className="flex space-x-4">
                     <a  href="https://github.com/riedelmanu" className="text-muted-foreground hover:text-primary" target="_blank" rel="noopener noreferrer">
                       <Github className="h-6 w-6" />
@@ -474,7 +335,7 @@ export default function Portfolio() {
       <footer className="w-full border-t py-6 md:py-0">
         <div className="max-w-6xl mx-auto flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-            &copy; {new Date().getFullYear()} DevPortfolio. Todos los derechos reservados.
+            &copy; {new Date().getFullYear()} Manuel Ángel Riedel. Todos los derechos reservados.
           </p>
           <div className="flex space-x-4">
             <Link href="#" className="text-muted-foreground hover:text-primary">
