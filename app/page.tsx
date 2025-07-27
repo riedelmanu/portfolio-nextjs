@@ -58,32 +58,31 @@ export default function Portfolio() {
 
       <main className="flex-1">
         {/* Hero Section */}
-<section id="home" className="w-full overflow-x-hidden py-12 md:py-24 lg:py-32 xl:py-48">
-  <div className="max-w-4xl mx-auto px-4 md:px-6">
-    <div className="flex flex-col items-center justify-center text-center space-y-6">
-      <div className="space-y-2">
-        <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-          Manuel Ángel Riedel
-        </h1>
-        <p className="max-w-[600px] text-muted-foreground md:text-xl mx-auto">
-          Estudiante de Ingeniería en Sistemas de Información con gran interés por el desarrollo de software.
-        </p>
-      </div>
-      <div className="flex flex-col gap-2 min-[400px]:flex-row justify-center">
-        <Link href="#projects">
-          <Button>Ver proyectos</Button>
-        </Link>
-        <Link href="#contact">
-          <Button variant="outline">Contacto</Button>
-        </Link>
-      </div>
-    </div>
-  </div>
-</section>
-
+       <section id="home" className="w-full min-h-screen flex items-center overflow-x-hidden">
+         <div className="max-w-4xl mx-auto px-4 md:px-6">
+           <div className="flex flex-col items-center justify-center text-center space-y-6">
+             <div className="space-y-2">
+               <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+                 Manuel Ángel Riedel
+               </h1>
+               <p className="max-w-[600px] text-muted-foreground md:text-xl mx-auto">
+                 Estudiante de Ingeniería en Sistemas de Información con gran interés por el desarrollo de software.
+               </p>
+             </div>
+             <div className="flex flex-col gap-2 min-[400px]:flex-row justify-center">
+               <Link href="#projects">
+                 <Button>Ver proyectos</Button>
+               </Link>
+               <Link href="#contact">
+                 <Button variant="outline">Contacto</Button>
+               </Link>
+             </div>
+           </div>
+         </div>
+       </section>
 
         {/* Projects Section */}
-        <section id="projects" className="w-full py-12 md:py-24 lg:py-32 bg-muted/50 overflow-x-hidden">
+        <section id="projects" className="w-full min-h-screen flex items-center overflow-x-hidden">
           <div className="max-w-6xl mx-auto px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2 max-w-[600px]">
@@ -97,23 +96,23 @@ export default function Portfolio() {
               {/* Project Card 1 */}
               <Card>
                 <CardHeader>
-                  <CardTitle>E-commerce Platform</CardTitle>
-                  <CardDescription>Plataforma de comercio electrónico completa</CardDescription>
+                  <CardTitle>Proyecto1</CardTitle>
+                  <CardDescription>descripción</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="aspect-video overflow-hidden rounded-lg">
                     <Image
                       src="/placeholder.svg?height=200&width=350"
-                      alt="E-commerce Project"
+                      alt="proyecto1"
                       width={350}
                       height={200}
                       className="object-cover w-full h-full"
                     />
                   </div>
                   <div className="flex flex-wrap gap-2 mt-4">
-                    <Badge>React</Badge>
-                    <Badge>Node.js</Badge>
-                    <Badge>MongoDB</Badge>
+                    <Badge>tecnologías</Badge>
+                    <Badge>tecnologías</Badge>
+                    <Badge>tecnologías</Badge>
                   </div>
                 </CardContent>
                 <CardFooter className="flex justify-between">
@@ -131,23 +130,23 @@ export default function Portfolio() {
               {/* Project Card 2 */}
               <Card>
                 <CardHeader>
-                  <CardTitle>Task Manager</CardTitle>
-                  <CardDescription>Aplicación de gestión de tareas</CardDescription>
+                  <CardTitle>Proyecto2</CardTitle>
+                  <CardDescription>descripción</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="aspect-video overflow-hidden rounded-lg">
                     <Image
                       src="/placeholder.svg?height=200&width=350"
-                      alt="Task Manager Project"
+                      alt="proyecto2"
                       width={350}
                       height={200}
                       className="object-cover w-full h-full"
                     />
                   </div>
                   <div className="flex flex-wrap gap-2 mt-4">
-                    <Badge>Next.js</Badge>
-                    <Badge>Prisma</Badge>
-                    <Badge>PostgreSQL</Badge>
+                    <Badge>tecnologías</Badge>
+                    <Badge>tecnologías</Badge>
+                    <Badge>tecnologías</Badge>
                   </div>
                 </CardContent>
                 <CardFooter className="flex justify-between">
@@ -165,23 +164,23 @@ export default function Portfolio() {
               {/* Project Card 3 */}
               <Card>
                 <CardHeader>
-                  <CardTitle>Weather App</CardTitle>
-                  <CardDescription>Aplicación de pronóstico del tiempo</CardDescription>
+                  <CardTitle>proyecto1</CardTitle>
+                  <CardDescription>descripción</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="aspect-video overflow-hidden rounded-lg">
                     <Image
                       src="/placeholder.svg?height=200&width=350"
-                      alt="Weather App Project"
+                      alt="proyecto3"
                       width={350}
                       height={200}
                       className="object-cover w-full h-full"
                     />
                   </div>
                   <div className="flex flex-wrap gap-2 mt-4">
-                    <Badge>Vue.js</Badge>
-                    <Badge>Tailwind</Badge>
-                    <Badge>API</Badge>
+                    <Badge>tecnologías</Badge>
+                    <Badge>tecnologías</Badge>
+                    <Badge>tecnologías</Badge>
                   </div>
                 </CardContent>
                 <CardFooter className="flex justify-between">
@@ -200,7 +199,7 @@ export default function Portfolio() {
         </section>
 
         {/* Skills Section */}
-       <section id="skills" className="w-full py-12 md:py-24 lg:py-32 overflow-x-hidden">
+       <section id="skills" className="w-full min-h-screen flex items-center overflow-x-hidden">
          <div className="max-w-6xl mx-auto px-4 md:px-6">
            <div className="flex flex-col items-center justify-center space-y-4 text-center">
              <div className="space-y-2 max-w-[600px]">
@@ -223,9 +222,8 @@ export default function Portfolio() {
          </div>
        </section>
 
-
         {/* About Section */}
-        <section id="about" className="w-full py-12 md:py-24 lg:py-32 bg-muted/50 overflow-x-hidden">
+        <section id="about" className="w-full min-h-screen flex items-center overflow-x-hidden">
           <div className="max-w-6xl mx-auto px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_500px]">
               <div className="flex items-center justify-center">
@@ -256,7 +254,7 @@ export default function Portfolio() {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="w-full py-12 md:py-24 lg:py-32">
+        <section id="contact" className="w-full min-h-screen flex items-center overflow-x-hidden">
           <div className="max-w-6xl mx-auto px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
