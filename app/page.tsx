@@ -96,34 +96,36 @@ export default function Portfolio() {
               {/* Project Card 1 */}
               <Card>
                 <CardHeader>
-                  <CardTitle>Proyecto1</CardTitle>
-                  <CardDescription>descripción</CardDescription>
+                  <CardTitle>NewsApp</CardTitle>
+                  <CardDescription>Backend de una aplicación de noticias</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="aspect-video overflow-hidden rounded-lg">
                     <Image
-                      src="/placeholder.svg?height=200&width=350"
-                      alt="proyecto1"
+                      src="/images/NET.png"
+                      alt=".NET"
                       width={350}
                       height={200}
                       className="object-cover w-full h-full"
                     />
                   </div>
                   <div className="flex flex-wrap gap-2 mt-4">
-                    <Badge>tecnologías</Badge>
-                    <Badge>tecnologías</Badge>
-                    <Badge>tecnologías</Badge>
+                    <Badge>C#</Badge>
+                    <Badge>.NET</Badge>
+                    <Badge>EntityFramework</Badge>
+                    <Badge>SQLServer</Badge>
                   </div>
                 </CardContent>
                 <CardFooter className="flex justify-between">
-                  <Link href="#" className="text-sm flex items-center gap-1 hover:text-primary">
+                  <a
+                    href="https://github.com/DDSW2023/NewsApp"
+                    className="text-sm flex items-center gap-1 hover:text-primary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
                     <Github className="h-4 w-4" />
                     <span>Código</span>
-                  </Link>
-                  <Link href="#" className="text-sm flex items-center gap-1 hover:text-primary">
-                    <ExternalLink className="h-4 w-4" />
-                    <span>Demo</span>
-                  </Link>
+                  </a>
                 </CardFooter>
               </Card>
 
