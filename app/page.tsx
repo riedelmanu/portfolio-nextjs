@@ -88,7 +88,7 @@ export default function Portfolio() {
               <div className="space-y-2 max-w-[600px]">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Mis Proyectos</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Una selección de mis trabajos más recientes y destacados en desarrollo de software.
+                  Una selección de algunos de mis trabajos en desarrollo de software.
                 </p>
               </div>
             </div>
@@ -102,11 +102,11 @@ export default function Portfolio() {
                 <CardContent>
                   <div className="aspect-video overflow-hidden rounded-lg">
                     <Image
-                      src="/images/NET.png"
-                      alt=".NET"
+                      src="/images/newsapp.png"
+                      alt="newsapp"
                       width={350}
                       height={200}
-                      className="object-cover w-full h-full"
+                      className="object-contain w-full h-full"
                     />
                   </div>
                   <div className="flex flex-wrap gap-2 mt-4">
@@ -130,70 +130,72 @@ export default function Portfolio() {
               </Card>
 
               {/* Project Card 2 */}
-              <Card>
+                            <Card>
                 <CardHeader>
-                  <CardTitle>Proyecto2</CardTitle>
-                  <CardDescription>descripción</CardDescription>
+                  <CardTitle>Backend App To-Do</CardTitle>
+                  <CardDescription>API REST de lista de tareas creada en .Net</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div className="aspect-video overflow-hidden rounded-lg">
+                  <div className="aspect-video flex items-center justify-center rounded-lg bg-white">
                     <Image
-                      src="/placeholder.svg?height=200&width=350"
-                      alt="proyecto2"
+                      src="/images/todo-list.png"
+                      alt="todo"
                       width={350}
                       height={200}
-                      className="object-cover w-full h-full"
+                      className="object-contain w-full h-full"
                     />
                   </div>
                   <div className="flex flex-wrap gap-2 mt-4">
-                    <Badge>tecnologías</Badge>
-                    <Badge>tecnologías</Badge>
-                    <Badge>tecnologías</Badge>
+                    <Badge>.Net</Badge>
+                    <Badge>C#</Badge>
+                    <Badge>MySQL</Badge>
                   </div>
                 </CardContent>
                 <CardFooter className="flex justify-between">
-                  <Link href="#" className="text-sm flex items-center gap-1 hover:text-primary">
+                  <a
+                    href="https://github.com/riedelmanu/todo-rest"
+                    className="text-sm flex items-center gap-1 hover:text-primary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <Github className="h-4 w-4" />
                     <span>Código</span>
-                  </Link>
-                  <Link href="#" className="text-sm flex items-center gap-1 hover:text-primary">
-                    <ExternalLink className="h-4 w-4" />
-                    <span>Demo</span>
-                  </Link>
+                  </a>
                 </CardFooter>
               </Card>
 
               {/* Project Card 3 */}
               <Card>
                 <CardHeader>
-                  <CardTitle>proyecto1</CardTitle>
-                  <CardDescription>descripción</CardDescription>
+                  <CardTitle>DevPortfolio</CardTitle>
+                  <CardDescription>Portafolio de desarrollador</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="aspect-video overflow-hidden rounded-lg">
                     <Image
-                      src="/placeholder.svg?height=200&width=350"
-                      alt="proyecto3"
+                      src="/images/portfolio.png"
+                      alt="portfolio"
                       width={350}
                       height={200}
                       className="object-cover w-full h-full"
                     />
                   </div>
                   <div className="flex flex-wrap gap-2 mt-4">
-                    <Badge>tecnologías</Badge>
-                    <Badge>tecnologías</Badge>
-                    <Badge>tecnologías</Badge>
+                    <Badge>Next.js</Badge>
+                    <Badge>React</Badge>
+                    <Badge>Typescript</Badge>
                   </div>
                 </CardContent>
                 <CardFooter className="flex justify-between">
-                  <Link href="#" className="text-sm flex items-center gap-1 hover:text-primary">
+                  <a
+                    href="https://github.com/riedelmanu/portfolio-nextjs"
+                    className="text-sm flex items-center gap-1 hover:text-primary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <Github className="h-4 w-4" />
                     <span>Código</span>
-                  </Link>
-                  <Link href="#" className="text-sm flex items-center gap-1 hover:text-primary">
-                    <ExternalLink className="h-4 w-4" />
-                    <span>Demo</span>
-                  </Link>
+                  </a>
                 </CardFooter>
               </Card>
             </div>
@@ -338,18 +340,18 @@ export default function Portfolio() {
             &copy; {new Date().getFullYear()} Manuel Ángel Riedel. Todos los derechos reservados.
           </p>
           <div className="flex space-x-4">
-            <Link href="#" className="text-muted-foreground hover:text-primary">
-              <Github className="h-5 w-5" />
-              <span className="sr-only">GitHub</span>
-            </Link>
-            <Link href="#" className="text-muted-foreground hover:text-primary">
-              <Linkedin className="h-5 w-5" />
-              <span className="sr-only">LinkedIn</span>
-            </Link>
-            <Link href="#" className="text-muted-foreground hover:text-primary">
-              <Mail className="h-5 w-5" />
-              <span className="sr-only">Email</span>
-            </Link>
+                    <a  href="https://github.com/riedelmanu" className="text-muted-foreground hover:text-primary" target="_blank" rel="noopener noreferrer">
+                      <Github className="h-6 w-6" />
+                      <span className="sr-only">GitHub</span>
+                    </a>    
+                    <a href="https://www.linkedin.com/in/manuel-riedel-997383255/" className="text-muted-foreground hover:text-primary" target="_blank" rel="noopener noreferrer">
+                      <Linkedin className="h-6 w-6" />
+                      <span className="sr-only">LinkedIn</span>
+                    </a>
+                    <a href="mailto:manuelriedel002@gmail.com" className="text-muted-foreground hover:text-primary" target="_blank" rel="noopener noreferrer">
+                      <Mail className="h-6 w-6" />
+                      <span className="sr-only">Email</span>
+                    </a>
           </div>
         </div>
       </footer>
